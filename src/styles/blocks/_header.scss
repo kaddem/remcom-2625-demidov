@@ -1,0 +1,30 @@
+.header {
+  color: $color-light;
+  background-color: $color-dark;
+}
+
+.header-inner {
+
+}
+
+.header-wrap {
+  display: flex;
+}
+
+.logo {
+  color: inherit;
+}
+
+.menu {
+  ul {
+    display: flex;
+  }
+
+  li {
+    margin: 0 15px;
+  }
+
+  a {
+    color: inherit;
+  }
+}
