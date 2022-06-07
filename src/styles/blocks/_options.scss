@@ -1,0 +1,12 @@
+.options {
+  padding: 100px 0;
+  background-color: $color-light;
+}
+
+.options-inner {
+  @include inner;
+}
+
+.options-title {
+  @include section-title;
+}
