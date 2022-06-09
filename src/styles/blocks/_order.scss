@@ -10,3 +10,8 @@
 .order-title {
   @include section-title;
 }
+
+.order-form {
+  width: 66.66%;
+  margin: 0 auto;
+}
