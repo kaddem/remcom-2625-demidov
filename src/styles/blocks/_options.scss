@@ -10,3 +10,37 @@
 .options-title {
   @include section-title;
 }
+
+.options-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 55px;
+}
+
+.options-item {
+  flex-basis: 50%;
+  padding: $gap-half;
+}
+
+.options-icon {
+  display: block;
+  height: 56px;
+  margin-bottom: 32px;
+  background-position: left center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.options-caption {
+  margin-bottom: 30px;
+  font-family: $font-ral;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.options-text {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 38px;
+}

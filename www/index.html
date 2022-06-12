@@ -41,7 +41,10 @@
             <a href="#" class="btn">Оставить заявку</a>
           </div>
           <div class="promo-visual">
-            <img src="images/promo-image.jpg" alt="Два мужика обсуждают как работает третий" class="promo-pic">
+            <div class="promo-pic-wrap">
+              <img src="images/promo-image.jpg" alt="Два мужика обсуждают как работает третий" class="promo-pic">
+              <p class="promo-desc">Два мужика обсуждают как работает третий</p>
+            </div>
           </div>
         </div>
       </div>
@@ -51,25 +54,25 @@
         <h2 class="options-title">Что мы ремонтируем</h2>
         <div class="options-list">
           <div class="options-item">
-            <i class="options-icon"></i>
+            <i class="options-icon" style="background-image: url('images/icon-microwave.svg');"></i>
             <h3 class="options-caption">Кухонную технику</h3>
             <p class="options-text">Холодильники, микроволновки,
               Духовые шкафы, кухонные комбайны и т.д.</p>
           </div>
           <div class="options-item">
-            <i class="options-icon"></i>
+            <i class="options-icon" style="background-image: url('images/icon-phone.svg');"></i>
             <h3 class="options-caption">Смартфоны</h3>
             <p class="options-text">Смартфоны и планшеты Apple, Samsung,
               Huawey, Honor, Xiaomi, Oppo и многие другие модели</p>
           </div>
           <div class="options-item">
-            <i class="options-icon"></i>
+            <i class="options-icon" style="background-image: url('images/icon-speaker.svg');"></i>
             <h3 class="options-caption">Теле и аудио</h3>
             <p class="options-text">Современные и не очень телефизоры, акустические системы, в том числе HiFi класса,
               ресиверы и проигрыватели грампластинок</p>
           </div>
           <div class="options-item">
-            <i class="options-icon"></i>
+            <i class="options-icon" style="background-image: url('images/icon-wood.svg');"></i>
             <h3 class="options-caption">Деревянную мебель</h3>
             <p class="options-text">Мебель из массива дерева - стулья, табуреты, шкафы, тумбы, секретеры и кабинеты.</p>
           </div>
@@ -96,12 +99,14 @@
             <div class="form-field">
               <input id="confirm" name="confirm" type="checkbox" class="form-checkbox">
               <label for="confirm" class="form-check-label">
-                Даю согласие на обработку персональных данных с соответствии с <a href="#">политикой обработки
-                  персональных данных</a>
+                <span>
+                  Даю согласие на обработку персональных данных с соответствии с <a href="#">политикой обработки
+                    персональных данных</a>
+                </span>
               </label>
             </div>
             <div class="form-field">
-              <button class="btn" type="submit">Отправить</button>
+              <button class="btn btn-wide" type="submit">Отправить</button>
             </div>
           </form>
         </div>
