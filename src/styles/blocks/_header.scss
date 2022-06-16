@@ -29,20 +29,51 @@
 }
 
 .menu {
+  @media (max-width: $tablet-max) {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    padding: 20px;
+    background-color: $color-dark;
+    border-top: 1px solid $color-light;
+  }
+
   ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+
+    @media (max-width: $tablet-max) {
+      justify-content: center;
+    }
+
+    @media (max-width: $mobile-max) {
+      display: block;
+      text-align: center;
+    }
   }
 
   li {
     margin: 0 15px;
+
+    @media (max-width: $mobile-max) {
+      margin: 20px 0;
+    }
   }
 
   a {
     display: block;
     color: inherit;
     text-decoration: none;
+    font-size: 24px;
+    line-height: 33px;
+
+    @media (max-width: $mobile-max) {
+      font-size: 20px;
+      line-height: 27px;
+    }
 
     &:hover {
       color: $color-orange;
@@ -57,4 +88,16 @@
   line-height: 33px;
   color: inherit;
   text-decoration: none;
+
+  @media (max-width: $mobile-max) {
+    display: none;
+  }
+}
+
+.header-btn {
+  display: none;
+
+  @media (max-width: $tablet-max) {
+    display: block;
+  }
 }
