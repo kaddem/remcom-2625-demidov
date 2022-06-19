@@ -1,6 +1,11 @@
 .form {
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: $tablet-max) {
+    margin-left: -$gap-half;
+    margin-right: -$gap-half;
+  }
 }
 
 .form-field {
@@ -11,6 +16,10 @@
 
 .form-field-half {
   flex-basis: 50%;
+
+  @media (max-width: $mobile-max) {
+    flex-basis: 100%;
+  }
 }
 
 .form-label {
