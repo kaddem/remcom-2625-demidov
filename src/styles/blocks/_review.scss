@@ -1,0 +1,34 @@
+.review {
+  display: flex;
+  align-items: center;
+}
+
+.review-photo {
+  flex-shrink: 0;
+  margin-right: 30px;
+}
+
+.review-pic {
+  width: 188px;
+  height: 188px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.review-content {
+  flex-grow: 1;
+}
+
+.review-name {
+  font-family: $font-ral;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.review-quote {
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+}
