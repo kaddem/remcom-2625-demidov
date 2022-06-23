@@ -33,6 +33,10 @@
   font-size: 36px;
   line-height: 49px;
   text-decoration: none;
+
+  &.active {
+    color: $color-orange;
+  }
 }
 
 .works-list {

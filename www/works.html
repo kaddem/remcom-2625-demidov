@@ -32,52 +32,52 @@
         <h1 class="works-title">Выполненные работы</h1>
         <ul class="works-filter">
           <li class="works-filter-item">
-            <a href="#" class="works-filter-link">Все</a>
+            <a href="#" class="works-filter-link active js-filter-link" data-filter="all">Все</a>
           </li>
           <li class="works-filter-item">
-            <a href="#" class="works-filter-link">Мебель</a>
+            <a href="#" class="works-filter-link js-filter-link" data-filter="wood">Мебель</a>
           </li>
           <li class="works-filter-item">
-            <a href="#" class="works-filter-link">Электроника</a>
+            <a href="#" class="works-filter-link js-filter-link" data-filter="electro">Электроника</a>
           </li>
         </ul>
         <div class="works-list">
-          <div class="works-item">
+          <div class="works-item js-works-item" data-type="wood">
             <div class="works-card">
               <strong class="works-name">Микроволновка</strong>
             </div>
           </div>
-          <div class="works-item">
+          <div class="works-item js-works-item" data-type="wood">
             <div class="works-card">
               <strong class="works-name">Электро-веник</strong>
             </div>
           </div>
-          <div class="works-item">
+          <div class="works-item js-works-item" data-type="electro">
             <div class="works-card">
               <strong class="works-name">Деревянные тапочки</strong>
             </div>
           </div>
-          <div class="works-item">
+          <div class="works-item js-works-item" data-type="wood">
             <div class="works-card">
               <strong class="works-name">Цифровой стол</strong>
             </div>
           </div>
-          <div class="works-item">
+          <div class="works-item js-works-item" data-type="electro">
             <div class="works-card">
               <strong class="works-name">Радио-комод</strong>
             </div>
           </div>
-          <div class="works-item">
+          <div class="works-item js-works-item" data-type="electro">
             <div class="works-card">
               <strong class="works-name">Чайник-тумба</strong>
             </div>
           </div>
-          <div class="works-item">
+          <div class="works-item js-works-item" data-type="wood">
             <div class="works-card">
               <strong class="works-name">Весло</strong>
             </div>
           </div>
-          <div class="works-item">
+          <div class="works-item js-works-item" data-type="electro">
             <div class="works-card">
               <strong class="works-name">Полка-скороварка</strong>
             </div>
@@ -85,6 +85,31 @@
         </div>
       </div>
     </section>
+
+    <section class="slider">
+      <div class="slider-inner">
+        <h2 class="slider-title">Фото наших работ</h2>
+
+        <div class="carousel js-carousel">
+          <div class="carousel-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatem
+            tenetur laborum iure optio necessitatibus, saepe sapiente aut nihil neque quia fugiat id at pariatur sed
+            quod illum dignissimos facere?</div>
+          <div class="carousel-item">Perferendis, neque. Exercitationem at ullam aspernatur in explicabo repellendus,
+            quas, esse labore asperiores perferendis similique, error quibusdam velit porro harum aperiam provident quo
+            minima. Soluta praesentium sint iure repellat ipsam!</div>
+          <div class="carousel-item">Vel perferendis laboriosam deleniti commodi, ut eius accusamus cumque ab excepturi!
+            Alias voluptas facere quibusdam error, illum quidem beatae mollitia nostrum ipsam laudantium, voluptatem cum
+            nisi similique minus rerum quis.</div>
+          <div class="carousel-item">Ex molestiae alias blanditiis distinctio id commodi quas iure consectetur! Numquam
+            sint, veniam iste cum nesciunt porro? Omnis, est odio vitae, magnam nihil ea molestiae aliquid dignissimos
+            alias veniam nisi?</div>
+          <div class="carousel-item">Sequi animi facilis tempora illum, quasi optio veritatis quae fugiat odio porro
+            reiciendis expedita soluta minus dignissimos praesentium earum. Id quo aliquam quam assumenda ipsa saepe
+            possimus necessitatibus quae minus.</div>
+        </div>
+      </div>
+    </section>
+
     <section class="order">
       <div class="order-inner">
         <h2 class="order-title">Заявка на ремонт</h2>
@@ -137,6 +162,7 @@
   </footer>
 
   <script src="scripts/jquery-3.6.0.min.js"></script>
+  <script src="scripts/slick.min.js"></script>
   <script src="scripts/script.js"></script>
 </body>
 

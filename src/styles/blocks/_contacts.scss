@@ -33,11 +33,19 @@
   font-size: 36px;
   line-height: 49px;
   text-decoration: none;
+
+  &.active {
+    color: $color-orange;
+  }
 }
 
 .contacts-content {
-  display: flex;
+  display: none;
   margin-top: 50px;
+
+  &.active {
+    display: flex;
+  }
 }
 
 .contacts-info {
