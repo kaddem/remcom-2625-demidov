@@ -84,4 +84,50 @@ $(document).ready(function(){
 
   $('.js-carousel').slick();
 
+
+  // ajax запрос отзывов
+  $('.js-review-btn').on('click', function() {
+    $(this).text('...');
+    $(this).attr('disabled', true);
+
+    $.ajax({
+      type: 'POST',
+      url: '../jsons/reviews.json',
+      data: 'count=2&test=trulala',
+      success: function(res) {
+        let htmlString = createHtmlString(res.reviews);
+        addToPage(htmlString);
+        $('.js-review-btn').text('Ещё отзывы');
+        $('.js-review-btn').removeAttr('disabled');
+      }, 
+      error: function() {
+        console.log('Чет не так');
+      }
+    });
+  });
+
+  function createHtmlString(reviewsArray) {
+    let result = '';
+
+    reviewsArray.forEach(function(item){
+      result = result + `<div class="reviews-item">
+        <div class="review">
+          <div class="review-photo">
+            <img src="${item.imgUrl}" alt="${item.imgAlt}" class="review-pic">
+          </div>
+          <div class="review-content">
+            <strong class="review-name">${item.name}</strong>
+            <blockquote class="review-quote">“${item.text}”</blockquote>
+          </div>
+        </div>
+      </div>`;
+    });
+
+    return result;
+  }
+
+  function addToPage(string) {
+    $('.js-reviews-list').append(string);
+  }
+
 });
